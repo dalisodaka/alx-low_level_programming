@@ -12,14 +12,14 @@
 int main(void)
 {
 	/**
- 	  *variable n has been declared
- 	  *coding that will assigns a random value.
+	  *variable n has been declared
+	  *coding that will assigns a random value.
 	  */
 	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-								
+
 	if (n > 0)
 	{
 	printf("%d is positive\n", n);

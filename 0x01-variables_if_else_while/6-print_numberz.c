@@ -1,4 +1,4 @@
-nclude <stdio.h>
+include <stdio.h>
 /**
  * main - print numbers 0 to 9
  * description - use variable int

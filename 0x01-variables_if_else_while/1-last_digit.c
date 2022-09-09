@@ -1,27 +1,29 @@
 #include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
 #include <stdio.h>
-/* betty style doc for function main goes there */
-**
-* main - Entry for variables, if else and while statement
-*
-*Return; Always return 0 (success)
-*/
+#include <time.h>
+
+/**
+ *main - The last digit
+ *@void: Empty parameter list for main.
+ *Description: Prints last digit of random number and tells
+ *if it is greater than 5, 0, or less than 6 and not 0.
+ *Return: 0 for success
+ */
 int main(void)
 {
 	int n;
 
 	srand(time(0));
+
 	n = rand() - RAND_MAX / 2;
 
-	/* your code goes there */
-
-	if (n > 0)
-		printf("%d is positive", n);
-	else if (n <0)
-		printf("%d is negative", n);
+	printf("Last digit of %d is %d ", n, (n % 10));
+	if ((n % 10) > 5)
+	{
+		printf("and is greater than 5\n");
+	}
+	else if ((n % 10) == 0)
+	{
+	printf("and is 0\n");
+	}
 	else
-		printf("%d is zero", n);
-	return (0);
-}

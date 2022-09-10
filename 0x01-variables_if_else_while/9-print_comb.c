@@ -9,13 +9,13 @@ int main(void)
 int c;
 c = 0;
 while ('0' + c <= '9')
-}
+{
 putchar('0' + c);
 if (!('0' + c == '9'))
 {
 putchar (',');
 putchar (' ');
-}
+		}
 c++;
 }
 putchar ('\n');

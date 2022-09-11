@@ -6,17 +6,17 @@
  */
 int main(void)
 {
-	int a;
-	for (a = 0; a < 100; a++)
-	{
-		putchar('0' + a / 10);
-		putchar('0' + a % 10);
-		if (!(a == 99))
-		{
-			putchar(',');
-			putchar(' ');
-		}
-	}
-	putchar('\n');
-	return (0);
+int a;
+for (a = 0; a < 100; a++)
+{
+putchar('0' + a / 10);
+putchar('0' + a % 10);
+if (!(a == 99))
+{
+putchar(',');
+putchar(' ');
+}
+}
+putchar('\n');
+return (0);
 }

@@ -1,22 +1,26 @@
 #include <stdio.h>
 /**
- * main - print numbers 00 to 99
+ * main - print combo of 2 numbers
  * description - nested loop
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-int a;
-for (a = 0; a < 100; a++)
-{
-putchar('0' + a / 10);
-putchar('0' + a % 10);
-if (!(a == 99))
-{
-putchar(',');
-putchar(' ');
-}
-}
-putchar('\n');
-return (0);
+	int tens;
+	int ones;
+	for (tens = 0; tens <= 9; tens++)
+	{
+		for (ones = tens + 1; ones <= 9; ones++)
+		{
+			putchar(tens + '0');
+			putchar(ones + '0');
+			if (tens < 8)
+			{
+				putchar (',');
+				putchar (' ');
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
 }

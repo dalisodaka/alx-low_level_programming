@@ -1,1 +1,1 @@
-This file is all about C programming
+void print_alphabet(void);

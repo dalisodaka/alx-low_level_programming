@@ -26,6 +26,7 @@ char *_strdup(char *str)
 	count = 0;
 	while (*str)
 		ptr[count++] = *str++;
+
 	ptr[count] = *str;
 
 	return (ptr);

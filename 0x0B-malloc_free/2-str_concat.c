@@ -8,7 +8,6 @@
  *
  * Return: A pointer to the newly allocated memory, or NULL on failure
  */
-
 char *str_concat(char *s1, char *s2)
 {
 	int i;
@@ -25,8 +24,6 @@ char *str_concat(char *s1, char *s2)
 	ptr = as1;
 	while (*ptr++)
 		i++;
-
-
 
 	ptr = as2;
 	while (*ptr++)

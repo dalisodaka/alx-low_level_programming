@@ -5,10 +5,9 @@
  * str_concat - concatenates two strings into a newly allocated space in memory
  * @s1: First string to be concatenated
  * @s2: Second string to be concatenated after s1
- *
  * Return: A pointer to the newly allocated memory, or NULL on failure
  */
-char *str_concat(char *s1, char *s2)
+cr *str_concat(char *s1, char *s2)
 {
 	int i;
 	char *ptr = NULL;
